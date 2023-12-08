@@ -3,6 +3,9 @@ const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPl
 
 module.exports = {
   mode: "development",
+  output: {
+    uniqueName: "remote1",
+  },
   devServer: {
     port: 3001,
   },
