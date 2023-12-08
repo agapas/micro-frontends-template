@@ -1,0 +1,22 @@
+{
+  "name": "host",
+  "version": "1.0.0",
+  "description": "A host app for micro-frontends",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agapas/micro-frontends-template/host"
+  },
+  "author": "Agnieszka Pas",
+  "license": "MIT",
+  "dependencies": {
+    "html-webpack-plugin": "^5.5.4",
+    "nodemon": "^3.0.2",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
