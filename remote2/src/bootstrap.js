@@ -1,5 +1,6 @@
 const mount = (el) => {
-  const text = `<h2>This is the remote2 app developed by Red Team</h2>`;
+  const text =
+    "<h2 style='color:red'>The Remote2 app content developed by Red Team</h2>";
 
   el.innerHTML = text;
 };
