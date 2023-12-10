@@ -1,8 +1,8 @@
 # micro-frontends-template
 
-A template for micro-frontends app with a run-time integration using [Webpack Module Federation](https://webpack.js.org/plugins/module-federation-plugin/).
+A template for micro-frontends implementation with a run-time integration using [Webpack5 Module Federation](https://webpack.js.org/plugins/module-federation-plugin/).
 
-This is a basic template created with javaScript, but the app is scalable and can be easily modified to met diverse requirements, like for example sharing some dependencies between apps. It also can be modified to use completely different set of frameworks and libraries for each app, so different teams could work on their projects independently at the same time.
+This is a basic app created with plain JavaScript, but it's scalable and can be easily modified to meet diverse requirements, like for example sharing some dependencies between apps. It also can be modified to use completely different set of frameworks and libraries for each app, so different teams could work on their projects independently at the same time. The full list of possible options can be found on [Module Federation Plugin page](https://webpack.js.org/plugins/module-federation-plugin/#options).
 
 ## Project structure:
 
@@ -19,14 +19,16 @@ Install dependencies separately in each sub app (host, remote1 and remote2) with
 - running the Remote apps (in isolation):
 
   - go to the Remote (remote1 or remote2) app directory
-  - run the command: `npm start` or `yarn start`
+  - start dev server with a command: `npm start` or `yarn start`
 
 - running the Host (together with Remote apps):
 
   - run the Remote apps (follow the steps in the point above for both, remote1 and remote2)
   - go to host app directory
-  - run the command: `npm start` or `yarn start`
+  - start dev server with a command: `npm start` or `yarn start`
   - check [http://localhost:3000](http://localhost:3000) in your browser (you should see the content of all micro-frontends there)
+
+**A Note:** The apps will automatically reload if you change the source files. The only exception is when you change `webpack.config` files, so you will need restart dev servers to see these changes.
 
 ## License
 
